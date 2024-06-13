@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open --host",
+    "build": "npm run lint && npm run build:demo",
+    "build:demo": "sh bash/build.sh -s && vite build && sh bash/build.sh -e",
+    "backup-project-files": "sh bash/build.sh -c",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:html",
+    "lint:js": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\" && eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:css": "prettier --write \"./src/**/*.css\"",
+    "lint:html": "prettier --write \"./**/*.html\"",
+    "preview": "npm run build && vite preview --open"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "decode-uri-component": "0.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-photo-album": "2.3.0",
+    "yet-another-react-lightbox": "3.12.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "@vitejs/plugin-react-swc": "3.3.2",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.49.0",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-refresh": "0.4.3",
+    "postcss": "8.4.30",
+    "prettier": "3.0.3",
+    "tailwindcss": "3.3.3",
+    "vite": "4.4.9"
+  }
+}

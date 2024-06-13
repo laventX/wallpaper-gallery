@@ -1,0 +1,11 @@
+{
+  "targetNumberOfRows": 3,
+  "autoRefresh": true,
+  "autoRefreshFrequencyMinutes": 120,
+  "imagesToRenderCount": 50,
+  "imageHoverEffect": false,
+  "refreshButton": true,
+  "refreshButtonInvisibleIfNoHover": true,
+  "refreshButtonPositionSide": "bottom-left",
+  "backgroundColor": "rgb(255, 255, 255)"
+}

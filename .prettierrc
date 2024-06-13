@@ -1,0 +1,13 @@
+{
+  "htmlWhitespaceSensitivity": "strict",
+  "overrides": [
+    {
+      "files": "*.{js,jsx,ts,tsx}",
+      "options": {
+        "bracketSameLine": false,
+        "singleQuote": true,
+        "jsxSingleQuote": false
+      }
+    }
+  ]
+}
